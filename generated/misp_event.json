@@ -46435,6 +46435,87 @@
           "disable_correlation": false,
           "to_ids": false,
           "category": "Other"
+        },
+        {
+          "uuid": "c0038b7a-09a2-4467-b97b-61b254577774",
+          "object_relation": "domain",
+          "value": "emcpanel.com",
+          "type": "domain",
+          "disable_correlation": false,
+          "to_ids": true,
+          "category": "Network activity"
+        },
+        {
+          "uuid": "c95c1258-55d2-41ba-a611-8bf6c874f955",
+          "object_relation": "domain",
+          "value": "ikeymonitor.com",
+          "type": "domain",
+          "disable_correlation": false,
+          "to_ids": true,
+          "category": "Network activity"
+        },
+        {
+          "uuid": "4110f66c-1a7b-4b98-9dcc-f413a0510080",
+          "object_relation": "domain",
+          "value": "em.awsapi.io",
+          "type": "domain",
+          "disable_correlation": false,
+          "to_ids": true,
+          "category": "Network activity"
+        },
+        {
+          "uuid": "eb731b3a-edfe-49ae-8973-d28bba99e9a0",
+          "object_relation": "domain",
+          "value": "awsapi.io",
+          "type": "domain",
+          "disable_correlation": false,
+          "to_ids": true,
+          "category": "Network activity"
+        },
+        {
+          "uuid": "e974a2a0-c25d-43c8-9b71-26eca6a12941",
+          "object_relation": "domain",
+          "value": "users.easemon.com",
+          "type": "domain",
+          "disable_correlation": false,
+          "to_ids": true,
+          "category": "Network activity"
+        },
+        {
+          "uuid": "24921b2a-4ab5-425d-8c71-9905482c026d",
+          "object_relation": "domain",
+          "value": "ikeymonitor.fr",
+          "type": "domain",
+          "disable_correlation": false,
+          "to_ids": true,
+          "category": "Network activity"
+        },
+        {
+          "uuid": "eb97baf4-3414-4caf-a409-0a060d878868",
+          "object_relation": "domain",
+          "value": "83dd4.appspot.com",
+          "type": "domain",
+          "disable_correlation": false,
+          "to_ids": true,
+          "category": "Network activity"
+        },
+        {
+          "uuid": "1c207477-9bb3-4509-827e-4e77a1f55504",
+          "object_relation": "domain",
+          "value": "ikm.awsapi.io",
+          "type": "domain",
+          "disable_correlation": false,
+          "to_ids": true,
+          "category": "Network activity"
+        },
+        {
+          "uuid": "239f5ffa-35e2-4c62-95aa-571144b86c1c",
+          "object_relation": "domain",
+          "value": "users.awosoft.com",
+          "type": "domain",
+          "disable_correlation": false,
+          "to_ids": true,
+          "category": "Network activity"
         }
       ],
       "distribution": "5",
@@ -73795,6 +73876,60 @@
           "disable_correlation": false,
           "to_ids": false,
           "category": "Other"
+        },
+        {
+          "uuid": "273cf6a2-ffaa-492f-971f-78c1166464b7",
+          "object_relation": "domain",
+          "value": "dummy-domain.com",
+          "type": "domain",
+          "disable_correlation": false,
+          "to_ids": true,
+          "category": "Network activity"
+        },
+        {
+          "uuid": "0849eee0-032e-4a40-b13e-33d5b775b48a",
+          "object_relation": "domain",
+          "value": "dummy-domain6.com",
+          "type": "domain",
+          "disable_correlation": false,
+          "to_ids": true,
+          "category": "Network activity"
+        },
+        {
+          "uuid": "ea2fddc0-219d-43ad-b2cb-fc381901f8c5",
+          "object_relation": "domain",
+          "value": "dummy-domain4.com",
+          "type": "domain",
+          "disable_correlation": false,
+          "to_ids": true,
+          "category": "Network activity"
+        },
+        {
+          "uuid": "d76c9d40-cfbf-43c8-a3f9-5a154a2f1b7a",
+          "object_relation": "domain",
+          "value": "dummy-domain5.com",
+          "type": "domain",
+          "disable_correlation": false,
+          "to_ids": true,
+          "category": "Network activity"
+        },
+        {
+          "uuid": "bd0704a8-6a45-4c99-94f3-186e42cae56f",
+          "object_relation": "domain",
+          "value": "dummy-domain3.com",
+          "type": "domain",
+          "disable_correlation": false,
+          "to_ids": true,
+          "category": "Network activity"
+        },
+        {
+          "uuid": "6badc6a7-4744-4f74-a966-87ed163b3213",
+          "object_relation": "domain",
+          "value": "dummy-domain2.com",
+          "type": "domain",
+          "disable_correlation": false,
+          "to_ids": true,
+          "category": "Network activity"
         }
       ],
       "distribution": "5",
@@ -73831,6 +73966,48 @@
       "Attribute": [
         {
           "uuid": "312b2adc-46d0-47a2-bb52-b2d380c77991",
+          "object_relation": "name",
+          "value": "mSpyitaly",
+          "type": "text",
+          "disable_correlation": false,
+          "to_ids": false,
+          "category": "Other"
+        }
+      ],
+      "distribution": "5",
+      "sharing_group_id": "0"
+    },
+    {
+      "name": "android-app",
+      "meta-category": "file",
+      "template_uuid": "92836f23-4730-4eae-82ac-9f00d5299735",
+      "description": "Indicators related to an Android app",
+      "template_version": "1",
+      "uuid": "0fe11cda-a956-44b1-ad74-844566c0f6ef",
+      "Attribute": [
+        {
+          "uuid": "55a9ba27-3959-4fb3-a33c-16e1cf4115aa",
+          "object_relation": "name",
+          "value": "juju",
+          "type": "text",
+          "disable_correlation": false,
+          "to_ids": false,
+          "category": "Other"
+        }
+      ],
+      "distribution": "5",
+      "sharing_group_id": "0"
+    },
+    {
+      "name": "android-app",
+      "meta-category": "file",
+      "template_uuid": "92836f23-4730-4eae-82ac-9f00d5299735",
+      "description": "Indicators related to an Android app",
+      "template_version": "1",
+      "uuid": "6df0085c-ca80-49b1-995a-2d2e533ff8cc",
+      "Attribute": [
+        {
+          "uuid": "340ae20a-e617-48cc-829b-7ea05137bd84",
           "object_relation": "name",
           "value": "mSpyitaly",
           "type": "text",

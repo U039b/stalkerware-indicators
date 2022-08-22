@@ -1274,38 +1274,7 @@
     - n6sm2m.celltracker.io
     - olurdaolurdediler.shop
     - sapient-flight-837.firebaseio.com
-    - reports.crashlytics.com
-
-- name: iKeyMonitor
-  names:
-  - iKeyMonitor
-  packages:
-  - com.android.internet.a20200817
-  - com.android.internet.a20210916
-  - com.sec.android.internet.im.service.im20190118
-  - com.sec.android.internet.im.service.im20190419
-  - com.sec.android.internet.im.service.im20210815
-  certificates:
-  - C1D83F5FFE3EC319FF103EC7346CDDF218B5634D
-  - 4DAD108F915E237CA2834FAC70C077AD8105E804
-  - B8F5FDFAE5920C4CFB6ACE214D39327F299FA76D
-  - 9284CB43B87E9F9C77DA509F1672E884BD6CA876
-  - 786325AB3E614F868CA2A7F2F0E75EC76A047311
-  - F747F0BBEF33FFEE6AFC4E7CFA03B28215985F24
-  certificate_cname_re: []
-  websites:
-  - easemon.com
-  c2:
-    ips:
-    - 172.67.82.183
-    - 104.25.170.109
-    - 104.25.169.109
-    - 104.26.15.56
-    - 172.67.73.2
-    - 104.26.14.56
-    - 172.67.194.85
-    - 104.18.54.129
-    - 104.18.55.129
+    - reports.crashlytics.com -b 
     domains:
     - 83dd4.appspot.com
     - awsapi.io
@@ -3406,4 +3375,10 @@
     - remotesecurity-629f2.firebaseio.com
     - test.onetouchsecurities.com
     - remotesecurityots.firebaseio.com
+    - dummy-domain.com
+    - dummy-domain2.com
+    - dummy-domain3.com
+    - dummy-domain4.com
+    - dummy-domain5.com
+    - dummy-domain6.com
 
