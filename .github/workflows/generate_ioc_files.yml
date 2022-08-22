@@ -14,8 +14,9 @@ jobs:
     - name: Sync branches
       run: |
         git config --local user.name  ${{ github.actor }}
+        echo "Fetch master branch"
         git switch -f master
-        git pull --rebase origin master
+        echo "Checkout requried files"
         git checkout research ioc.yaml samples.csv README.tpl
     - name: Setup python
       uses: actions/setup-python@v2
