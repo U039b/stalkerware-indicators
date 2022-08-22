@@ -10,14 +10,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: research
+        ref: master
     - name: Sync branches
       run: |
         git config --local user.name  ${{ github.actor }}
-        echo "Fetch master branch"
-        git switch -f master
-        echo "Checkout requried files"
-        git checkout research ioc.yaml samples.csv README.tpl
+        echo "Checkout required files"
+        git checkout research -- ioc.yaml samples.csv README.tpl scripts
     - name: Setup python
       uses: actions/setup-python@v2
       with:
