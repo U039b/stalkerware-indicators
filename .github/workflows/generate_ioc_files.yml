@@ -30,6 +30,7 @@ jobs:
         git add generated/
         git add ioc.yaml
         git add README.md
+        git rm -rf -- README.tpl scripts
         git commit -m "Updating generated indicator files and README"
     - name: Push changes  # push the output folder to your repo
       uses: ad-m/github-push-action@master
