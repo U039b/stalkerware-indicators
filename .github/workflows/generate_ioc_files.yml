@@ -2,7 +2,7 @@ name: 'Create-IOC-Files'
 on:
   push:
     branches: ['research']
-    paths: ['ioc.yaml', 'samples.csv']
+    paths: ['ioc.yaml', 'samples.csv', 'README.tpl']
 
 jobs:
   build:
@@ -14,7 +14,7 @@ jobs:
     - name: Sync branches
       run: |
         git config --local user.name  ${{ github.actor }}
-        git checkout -b master
+        git checkout master
         git pull --rebase origin master
         git checkout research ioc.yaml samples.csv README.tpl
     - name: Setup python
