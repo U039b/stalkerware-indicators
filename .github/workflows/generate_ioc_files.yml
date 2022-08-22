@@ -14,7 +14,7 @@ jobs:
     - name: Sync branches
       run: |
         git config --local user.name  ${{ github.actor }}
-        git checkout master
+        git switch -f master
         git pull --rebase origin master
         git checkout research ioc.yaml samples.csv README.tpl
     - name: Setup python
