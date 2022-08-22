@@ -1,7 +1,7 @@
 name: 'Create-IOC-Files'
 on:
   push:
-    branches: ['master']
+    branches: ['research']
     paths: ['ioc.yaml', 'samples.csv']
 
 jobs:
@@ -9,7 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: setup python
+      with:
+        ref: research
+    - name: Sync branches
+      run: |
+        git config --local user.name  ${{ github.actor }}
+        git checkout -b master
+        git pull --rebase origin master
+        git checkout research ioc.yaml samples.csv README.tpl
+    - name: Setup python
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
@@ -17,10 +25,10 @@ jobs:
       run: |
           pip install -r scripts/requirements.txt
           python scripts/generate.py
-    - name: Commit files  # transfer the json file in the repo
+    - name: Push changes
       run: |
-        git config --local user.name  ${{ github.actor }}
         git add generated/
+        git add ioc.yaml
         git add README.md
         git commit -m "Updating generated indicator files and README"
     - name: Push changes  # push the output folder to your repo
@@ -28,3 +36,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         force: true
+        branch: master
